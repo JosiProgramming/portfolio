@@ -1950,7 +1950,7 @@ a {
 }
 
 .about-section {
-  padding-top: 80px;
+  padding-top: 50px;
   min-height: auto;
 }
 
@@ -2024,4 +2024,15 @@ a {
     display: none;
   }
 
+}
+/* FINAL SECTION SPACING */
+
+#projects.projects-section {
+  padding-bottom: 25px !important;
+  margin-bottom: 0 !important;
+}
+
+#about.about-section {
+  padding-top: 25px !important;
+  margin-top: 0 !important;
 }
