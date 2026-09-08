@@ -498,7 +498,8 @@ a {
 /* SECTION */
 
 .section {
-  padding: 120px 0;
+   padding-top: 50px;
+   padding-bottom: 80px;
 }
 
 .section-heading {
@@ -1304,18 +1305,16 @@ a {
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 70px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+    align-items: center;
+    margin-top: 0;
 }
 
 .about-label {
-  color: #4da3e6;
-  font-size: 0.6rem;
-  letter-spacing: 2.5px;
-
-  margin-bottom: 22px;
+    margin-top: 0;
+    margin-bottom: 22px;
 }
 
 .about-main h3 {
