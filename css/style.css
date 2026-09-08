@@ -2036,298 +2036,119 @@ a {
   padding-top: 25px !important;
   margin-top: 0 !important;
 }
-/* =========================
-   RESPONSIVIDADE - MOBILE
-   ========================= */
 
-/* =========================
-   MOBILE
-   ========================= */
+/* =========================================
+   AJUSTES EXCLUSIVOS PARA CELULAR
+========================================= */
 
 @media (max-width: 768px) {
 
   html,
   body {
     width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
+  }
+
+  .container,
+  .hero-grid,
+  .hero-content,
+  .hero-system,
+  .home-stack,
+  .pipeline,
+  .pipeline-step {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .container {
     width: 90%;
-    max-width: 100%;
-    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
-
-
-  /* HEADER */
-
-  .nav-container {
-    height: 64px;
-    justify-content: center;
-  }
-
-  .logo {
-    font-size: 0.72rem;
-    letter-spacing: 1.2px;
-    text-align: center;
-  }
-
-  .nav {
-    display: none;
-  }
-
-
-  /* HERO */
 
   .hero {
-    min-height: auto;
-    padding: 100px 0 50px;
+    padding: 100px 0 40px;
+    overflow: hidden;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 45px;
-  }
-
-  .hero-content {
-    width: 100%;
+    gap: 35px;
   }
 
   .hero h1 {
-    font-size: clamp(2.7rem, 13vw, 4rem);
-    line-height: 0.95;
-    letter-spacing: -2px;
-    overflow-wrap: break-word;
+    font-size: clamp(2.2rem, 11vw, 3.2rem);
+    line-height: 0.96;
+    letter-spacing: -1.5px;
+    max-width: 100%;
+  }
+
+  .hero h1 span {
+    display: block;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    font-size: 0.64rem;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
   }
 
   .hero-subtitle {
-    font-size: 0.95rem;
-    padding-left: 15px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding-left: 14px;
+    overflow-wrap: break-word;
   }
 
   .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 12px;
   }
 
   .btn {
     width: 100%;
-    text-align: center;
+    max-width: 100%;
+    display: block;
   }
 
   .hero-meta {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
     gap: 16px;
   }
 
-
-  /* HERO MACHINE */
-
   .hero-system {
-    width: 100%;
-    min-height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .machine-frame {
-    width: min(100%, 340px);
-    height: 340px;
-  }
-
-  .ring-1 {
-    width: 230px;
-    height: 230px;
-  }
-
-  .ring-2 {
-    width: 180px;
-    height: 180px;
-  }
-
-  .ring-3 {
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+    margin: 0 auto;
   }
 
   .kpi-panel {
-    position: relative;
     width: 100%;
-    max-width: 340px;
-    right: auto;
-    bottom: auto;
+    max-width: 320px;
     margin: 18px auto 0;
-  }
-
-
-  /* TECHNOLOGY STACK */
-
-  .home-stack {
-    margin-top: 50px;
-    padding-bottom: 40px;
+    right: auto;
   }
 
   .pipeline {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .pipeline-step {
-    min-height: auto;
-    padding: 22px;
+    gap: 14px;
   }
 
   .pipeline-connector {
     display: none;
-  }
-
-
-  /* SECTIONS */
-
-  .section {
-    padding: 45px 0;
-  }
-
-  .section-heading {
-    margin-bottom: 28px;
-  }
-
-  .section-heading h2 {
-    font-size: 1.8rem;
-  }
-
-
-  /* PROJECT */
-
-  .projects-intro {
-    margin-top: -10px;
-    margin-bottom: 30px;
-  }
-
-  .project-industrial {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    padding: 14px;
-    gap: 20px;
-  }
-
-  .project-side {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: auto;
-    width: 100%;
-    padding: 0 0 12px;
-    border-right: 0;
-    border-bottom: 1px solid rgba(77, 163, 230, 0.12);
-  }
-
-  .project-index,
-  .project-domain {
-    writing-mode: horizontal-tb;
-  }
-
-  .project-line {
-    width: auto;
-    height: 1px;
-    flex: 1;
-    margin: 0 12px;
-  }
-
-  .project-preview {
-    width: 100%;
-    min-height: auto;
-  }
-
-  .dashboard-frame {
-    min-height: 0;
-    aspect-ratio: 16 / 10;
-  }
-
-  .dashboard-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .preview-header,
-  .preview-footer {
-    gap: 10px;
-    flex-wrap: wrap;
-    line-height: 1.5;
-  }
-
-  .project-info {
-    padding: 10px 2px;
-  }
-
-  .project-info h3 {
-    font-size: 2rem;
-  }
-
-  .project-specs {
-    grid-template-columns: 1fr 1fr;
-  }
-
-
-  /* ABOUT */
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .about-main h3 {
-    font-size: clamp(2.4rem, 11vw, 3.5rem);
-  }
-
-  .about-system {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .profile-image {
-    width: 100%;
-    height: 300px;
-  }
-
-  .profile-row {
-    gap: 15px;
-  }
-
-
-  /* CONTACT */
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .contact-main h3 {
-    font-size: clamp(2.7rem, 12vw, 4rem);
-    letter-spacing: -2px;
-  }
-
-  .contact-button {
-    grid-template-columns: 60px 1fr auto;
-  }
-
-  .connection-terminal {
-    width: 100%;
-  }
-
-
-  /* FOOTER */
-
-  .footer-content {
-    padding: 30px 0;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-process {
-    flex-wrap: wrap;
   }
 }
