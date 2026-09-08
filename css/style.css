@@ -1959,6 +1959,19 @@ a {
   min-height: auto;
   height: auto;
 }
+/* ABOUT SPACING FIX */
+
+.about-section .section-heading {
+  margin-bottom: 45px;
+}
+
+.about-grid {
+  margin-top: 0;
+}
+
+.about-label {
+  margin-top: 0;
+}
 /* RESPONSIVE */
 
 @media (max-width: 950px) {
