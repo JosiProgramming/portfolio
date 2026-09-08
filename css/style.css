@@ -2036,3 +2036,103 @@ a {
   padding-top: 25px !important;
   margin-top: 0 !important;
 }
+/* =========================
+   RESPONSIVIDADE - MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Evita estouro lateral */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Seções */
+    section {
+        padding: 60px 20px;
+    }
+
+    /* Navbar */
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* Hero / início */
+    .hero {
+        min-height: auto;
+        padding: 100px 20px 60px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .hero h2,
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* About */
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    /* Sua foto */
+    .about img {
+        width: 220px;
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Skills */
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projetos */
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Cards */
+    .project-card {
+        width: 100%;
+    }
+
+    /* Botões */
+    .buttons,
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .buttons a,
+    .hero-buttons a {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+}
