@@ -2151,4 +2151,46 @@ a {
   .pipeline-connector {
     display: none;
   }
+
+  .project-industrial {
+    grid-template-columns: 1fr;
+    padding: 14px;
+    gap: 20px;
+  }
+
+  .project-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    min-height: auto;
+
+    padding: 0 0 12px 0;
+
+    border-right: none;
+    border-bottom: 1px solid rgba(77, 163, 230, 0.12);
+  }
+
+  .project-index,
+  .project-domain {
+    writing-mode: horizontal-tb;
+    transform: none;
+    white-space: nowrap;
+  }
+
+  .project-line {
+    width: auto;
+    height: 1px;
+    flex: 1;
+
+    margin: 0 12px;
+
+    background: linear-gradient(
+      90deg,
+      #4da3e6,
+      rgba(77, 163, 230, 0.03)
+    );
+  }
+
 }
